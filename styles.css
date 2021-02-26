@@ -34,11 +34,10 @@ html {
     
 }
 
-.header {
+.header img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(/images/typewritermine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
