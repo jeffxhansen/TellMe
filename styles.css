@@ -289,7 +289,7 @@ html {
 */
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 450px) { 
     .selections-grid {
         width: 100%;
     }
@@ -304,7 +304,7 @@ html {
 }
   
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 451px) and (max-width: 960px) {
     .selections-grid {
         width: 100%;
     }
