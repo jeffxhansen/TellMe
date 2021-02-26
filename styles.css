@@ -116,9 +116,20 @@ html {
 .response-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 
     /* box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.response-box {
+    width: 80%;
+
+    flex-direction: column;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -128,7 +139,29 @@ html {
     padding: 60px 30px;
     border-radius: 15px;
     background-color: #f8f8f8;
+
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.another {
+    margin-top: 0;
+    margin-left: 10px;
+    width: 180px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+
+    text-align: center;
+
+    color: #00008B; 
+    cursor: pointer;
+
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.another:hover {
+    background-color: white;
 }
 
 .body {

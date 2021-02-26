@@ -1,4 +1,8 @@
+var type = "";
+
 function aClick(string) {
+
+    type = string;
     let baseHTML = String(responseHTML());
     document.getElementById("target").innerHTML = baseHTML;
 
@@ -97,6 +101,10 @@ function aClick(string) {
     
 }
 
+function reload(input) {
+    aClick(input);
+}
+
 function generateAnswerBank(correctAnswer, incorrectAnswers) {
     let str = "<p><strong>Options:</strong></p>";
     str += "<ul class='wordBank'>";
@@ -131,13 +139,16 @@ function correctDate(str) {
 
 function responseHTML() {
     return `
-    <div class="response">
-        <div class='body' id='body'>
+    <div class='response-box'>
+        <div class="response">
+            <div class='body' id='body'>
+            </div>
+            <div class='info'>
+            </div>
+            <div class='author' id='author'>
+            </div>
         </div>
-        <div class='info'>
-        </div>
-        <div class='author' id='author'>
-        </div>
+        <div><h2 class="another noSelect" onclick='reload(type)'>Another?</h2></div>
     </div>
     `;
 }
