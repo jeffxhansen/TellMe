@@ -48,7 +48,7 @@ function aClick(string) {
             str += `<p class='info'><strong>Difficulty:</strong> ${myObj.difficulty} </p>`;
             str += `<p class='question'><strong>Question:</strong> ${myObj.question} </p>`;
             str += generateAnswerBank(myObj.correct_answer, myObj.incorrect_answers)
-            str += `<p class='answer' style='color: #00008B; cursor: pointer;' id='answer' onclick='addAnswer(myObj.correct_answer)'><strong><u>Answer</u>:</strong> </p>`;
+            str += `<p class='answer noSelect' style='color: #00008B; cursor: pointer;' id='answer' onclick='addAnswer(myObj.correct_answer)'><strong><u>Answer</u>:</strong> </p>`;
             document.getElementById("body").innerHTML = str;
           }
         };

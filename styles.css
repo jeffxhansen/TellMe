@@ -39,9 +39,12 @@ html {
     justify-content: space-around;
     align-items: center;
     background-image: url(/images/typewritermine.jpg);
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-height: 350px;
     width: 100%;
-    height: 350px;
+    height: auto;
 
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -222,4 +225,99 @@ html {
 .footer-item a {
     font-weight: bolder;
     color: black;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*
+.selections-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.selections-grid {
+    margin: 30px 0px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    align-items: center;
+
+    flex-direction: row;
+}
+  
+.selection {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px;
+    background-color: #f6f6f6;
+
+    text-decoration: none;
+    color: black;
+
+    cursor: pointer;
+
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selection:hover {
+    background-color: #ffffff;
+}
+
+.selection span,
+.selection h2 {
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    align-self: center;
+    font-family: Courier, monospace;
+}
+*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .selections-grid {
+        width: 100%;
+    }
+      
+    .selection {
+        width: 300px;
+    }
+
+    .response {
+        width: 90%;
+    }
+}
+  
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .selections-grid {
+        width: 100%;
+    }
+      
+    .selection {
+        width: 200px;
+    }
+
+    .response {
+        width: 90%;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
 }
