@@ -148,7 +148,7 @@ function responseHTML() {
             <div class='author' id='author'>
             </div>
         </div>
-        <div><h2 class="another noSelect" onclick='reload(type)'>Another?</h2></div>
+        <div><h2 class="another noSelect" onclick='reload(type)'>Tell Me Another</h2></div>
     </div>
     `;
 }
